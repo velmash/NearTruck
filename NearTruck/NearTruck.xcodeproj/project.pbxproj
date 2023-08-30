@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368D54DC83EFB050B8D25B0F /* Pods_NearTruck_NearTruckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB64511CA7B922A512C2E63 /* Pods_NearTruck_NearTruckUITests.framework */; };
 		3AB283F72A9EF81600ACF944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283F62A9EF81600ACF944 /* AppDelegate.swift */; };
 		3AB283F92A9EF81600ACF944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283F82A9EF81600ACF944 /* SceneDelegate.swift */; };
 		3AB283FB2A9EF81600ACF944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283FA2A9EF81600ACF944 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		3AB2840E2A9EF81700ACF944 /* NearTruckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2840D2A9EF81700ACF944 /* NearTruckTests.swift */; };
 		3AB284182A9EF81700ACF944 /* NearTruckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB284172A9EF81700ACF944 /* NearTruckUITests.swift */; };
 		3AB2841A2A9EF81700ACF944 /* NearTruckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB284192A9EF81700ACF944 /* NearTruckUITestsLaunchTests.swift */; };
+		689D4F0EE430078D67696899 /* Pods_NearTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA11E0DBA6C8F8F699BC597 /* Pods_NearTruck.framework */; };
+		E1576A06D5D134A59AE9E7C7 /* Pods_NearTruckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890C608E044C0081D8118CE8 /* Pods_NearTruckTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23324602F9E32CBABDE6F6B0 /* Pods-NearTruck-NearTruckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck-NearTruckUITests.release.xcconfig"; path = "Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24CE404DF23DF3E018B01169 /* Pods-NearTruck-NearTruckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck-NearTruckUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3AB283F32A9EF81600ACF944 /* NearTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB283F62A9EF81600ACF944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB283F82A9EF81600ACF944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		3AB284132A9EF81700ACF944 /* NearTruckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearTruckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB284172A9EF81700ACF944 /* NearTruckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTruckUITests.swift; sourceTree = "<group>"; };
 		3AB284192A9EF81700ACF944 /* NearTruckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTruckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5874CB477B73AA147A97E0F0 /* Pods-NearTruckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruckTests.debug.xcconfig"; path = "Target Support Files/Pods-NearTruckTests/Pods-NearTruckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6548EF3113D5669FD5F21EC2 /* Pods-NearTruckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruckTests.release.xcconfig"; path = "Target Support Files/Pods-NearTruckTests/Pods-NearTruckTests.release.xcconfig"; sourceTree = "<group>"; };
+		890C608E044C0081D8118CE8 /* Pods_NearTruckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearTruckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA11E0DBA6C8F8F699BC597 /* Pods_NearTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF377486E56391EB02450830 /* Pods-NearTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck.release.xcconfig"; path = "Target Support Files/Pods-NearTruck/Pods-NearTruck.release.xcconfig"; sourceTree = "<group>"; };
+		C28706967B6DF4E3892F4AA8 /* Pods-NearTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck.debug.xcconfig"; path = "Target Support Files/Pods-NearTruck/Pods-NearTruck.debug.xcconfig"; sourceTree = "<group>"; };
+		CEB64511CA7B922A512C2E63 /* Pods_NearTruck_NearTruckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearTruck_NearTruckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689D4F0EE430078D67696899 /* Pods_NearTruck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1576A06D5D134A59AE9E7C7 /* Pods_NearTruckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368D54DC83EFB050B8D25B0F /* Pods_NearTruck_NearTruckUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				3AB2840C2A9EF81700ACF944 /* NearTruckTests */,
 				3AB284162A9EF81700ACF944 /* NearTruckUITests */,
 				3AB283F42A9EF81600ACF944 /* Products */,
+				8D28367349739C692491633E /* Pods */,
+				E62F82793581C9F8F342D984 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,29 @@
 			path = NearTruckUITests;
 			sourceTree = "<group>";
 		};
+		8D28367349739C692491633E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C28706967B6DF4E3892F4AA8 /* Pods-NearTruck.debug.xcconfig */,
+				BF377486E56391EB02450830 /* Pods-NearTruck.release.xcconfig */,
+				24CE404DF23DF3E018B01169 /* Pods-NearTruck-NearTruckUITests.debug.xcconfig */,
+				23324602F9E32CBABDE6F6B0 /* Pods-NearTruck-NearTruckUITests.release.xcconfig */,
+				5874CB477B73AA147A97E0F0 /* Pods-NearTruckTests.debug.xcconfig */,
+				6548EF3113D5669FD5F21EC2 /* Pods-NearTruckTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E62F82793581C9F8F342D984 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA11E0DBA6C8F8F699BC597 /* Pods_NearTruck.framework */,
+				CEB64511CA7B922A512C2E63 /* Pods_NearTruck_NearTruckUITests.framework */,
+				890C608E044C0081D8118CE8 /* Pods_NearTruckTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB2841D2A9EF81700ACF944 /* Build configuration list for PBXNativeTarget "NearTruck" */;
 			buildPhases = (
+				66F9F742BDCA3CF998DCDD8B /* [CP] Check Pods Manifest.lock */,
 				3AB283EF2A9EF81600ACF944 /* Sources */,
 				3AB283F02A9EF81600ACF944 /* Frameworks */,
 				3AB283F12A9EF81600ACF944 /* Resources */,
+				59B514049C42411A2B354B19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB284202A9EF81700ACF944 /* Build configuration list for PBXNativeTarget "NearTruckTests" */;
 			buildPhases = (
+				59CA61658F06777B34B2DB37 /* [CP] Check Pods Manifest.lock */,
 				3AB284052A9EF81700ACF944 /* Sources */,
 				3AB284062A9EF81700ACF944 /* Frameworks */,
 				3AB284072A9EF81700ACF944 /* Resources */,
@@ -169,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB284232A9EF81700ACF944 /* Build configuration list for PBXNativeTarget "NearTruckUITests" */;
 			buildPhases = (
+				BD8E16FA190AAC9D330D55C9 /* [CP] Check Pods Manifest.lock */,
 				3AB2840F2A9EF81700ACF944 /* Sources */,
 				3AB284102A9EF81700ACF944 /* Frameworks */,
 				3AB284112A9EF81700ACF944 /* Resources */,
+				FC9B21AA7FD189647295F76A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59B514049C42411A2B354B19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearTruck/Pods-NearTruck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearTruck/Pods-NearTruck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearTruck/Pods-NearTruck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59CA61658F06777B34B2DB37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearTruckTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66F9F742BDCA3CF998DCDD8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearTruck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD8E16FA190AAC9D330D55C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearTruck-NearTruckUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9B21AA7FD189647295F76A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AB283EF2A9EF81600ACF944 /* Sources */ = {
@@ -432,12 +580,13 @@
 		};
 		3AB2841E2A9EF81700ACF944 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28706967B6DF4E3892F4AA8 /* Pods-NearTruck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FP8CB3BY93;
+				DEVELOPMENT_TEAM = 6M4C5C72YG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NearTruck/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,12 +610,13 @@
 		};
 		3AB2841F2A9EF81700ACF944 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF377486E56391EB02450830 /* Pods-NearTruck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FP8CB3BY93;
+				DEVELOPMENT_TEAM = 6M4C5C72YG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NearTruck/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -490,6 +640,7 @@
 		};
 		3AB284212A9EF81700ACF944 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5874CB477B73AA147A97E0F0 /* Pods-NearTruckTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +661,7 @@
 		};
 		3AB284222A9EF81700ACF944 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6548EF3113D5669FD5F21EC2 /* Pods-NearTruckTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +682,7 @@
 		};
 		3AB284242A9EF81700ACF944 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CE404DF23DF3E018B01169 /* Pods-NearTruck-NearTruckUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +701,7 @@
 		};
 		3AB284252A9EF81700ACF944 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23324602F9E32CBABDE6F6B0 /* Pods-NearTruck-NearTruckUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
