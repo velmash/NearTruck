@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  DetailCoordinator.swift
 //  NearTruck
 //
 //  Created by 윤형찬 on 2023/08/30.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainCoordinator: Coordinator {
+class DetailCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -15,15 +15,13 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = MainViewController()
+        let vc = DetailViewController()
         vc.coordinator = self
         
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
     
-    func goDetail() {
-        let coordinator = DetailCoordinator(navigationController: navigationController)
-        
-        coordinator.start()
+    func goBack() {
+        navigationController.popViewController(animated: true)
     }
 }

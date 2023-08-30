@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  DetailViewController.swift
 //  NearTruck
 //
 //  Created by 윤형찬 on 2023/08/30.
@@ -9,23 +9,23 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MainViewController: BaseViewController {
+class DetailViewController: BaseViewController {
     private var bag = DisposeBag()
-    private let mainView = MainView()
+    private let detailView = DetailView()
     
-    var coordinator: MainCoordinator?
+    var coordinator: DetailCoordinator?
     
     override func loadView() {
-        view = mainView
+        view = detailView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainView.actionButton.rx.tap
+        detailView.actionButton.rx.tap
             .asDriver()
             .drive(onNext: { [weak self] in
-                self?.coordinator?.goDetail()
+                self?.coordinator?.goBack()
             })
             .disposed(by: bag)
     }
