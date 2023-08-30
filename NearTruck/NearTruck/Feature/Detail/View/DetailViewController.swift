@@ -13,7 +13,7 @@ class DetailViewController: BaseViewController {
     private var bag = DisposeBag()
     private let detailView = DetailView()
     
-    var coordinator: DetailCoordinator?
+    var viewModel: DetailViewModel?
     
     override func loadView() {
         view = detailView
@@ -22,11 +22,16 @@ class DetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detailView.actionButton.rx.tap
-            .asDriver()
-            .drive(onNext: { [weak self] in
-                self?.coordinator?.goBack()
-            })
-            .disposed(by: bag)
+        bindViewModel()
+    }
+    
+    private func bindViewModel() {
+        guard let viewModel = self.viewModel else { return }
+        
+        let input = DetailViewModel.Input(
+            backBtnTrigger: detailView.actionButton.rx.tap.asDriver()
+        )
+        
+        let output = viewModel.transform(input: input)
     }
 }

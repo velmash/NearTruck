@@ -13,7 +13,7 @@ class MainViewController: BaseViewController {
     private var bag = DisposeBag()
     private let mainView = MainView()
     
-    var coordinator: MainCoordinator?
+    var viewModel: MainViewModel?
     
     override func loadView() {
         view = mainView
@@ -22,11 +22,15 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainView.actionButton.rx.tap
-            .asDriver()
-            .drive(onNext: { [weak self] in
-                self?.coordinator?.goDetail()
-            })
-            .disposed(by: bag)
+        bindViewModel()
+    }
+    
+    private func bindViewModel() {
+        guard let viewModel = self.viewModel else { return }
+        let input = MainViewModel.Input(
+            actionBtnTrigger: mainView.actionButton.rx.tap.asDriver()
+        )
+        
+        let output = viewModel.transform(input: input)
     }
 }

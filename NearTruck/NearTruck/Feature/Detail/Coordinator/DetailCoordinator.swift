@@ -16,7 +16,10 @@ class DetailCoordinator: Coordinator {
     
     func start() {
         let vc = DetailViewController()
-        vc.coordinator = self
+        let viewModel = DetailViewModel()
+        
+        viewModel.coordinator = self
+        vc.viewModel = viewModel
         
         navigationController.pushViewController(vc, animated: true)
     }
