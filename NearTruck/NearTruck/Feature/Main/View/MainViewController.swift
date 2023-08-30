@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MainViewController: UIViewController {
+    private var bag = DisposeBag()
     private let mainView = MainView()
     
     var coordinator: MainCoordinator?
@@ -17,6 +20,11 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        print("HI")
+        mainView.actionButton.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] in
+                self?.coordinator?.goDetail()
+            })
+            .disposed(by: bag)
     }
 }

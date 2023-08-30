@@ -20,4 +20,8 @@ class MainCoordinator: Coordinator {
         
         navigationController.pushViewController(vc, animated: false)
     }
+    
+    func goDetail() {
+        print("가자~")
+    }
 }

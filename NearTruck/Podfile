@@ -7,6 +7,11 @@ target 'NearTruck' do
 
   # Pods for NearTruck
   pod 'Alamofire'
+  pod 'SnapKit'
+  pod 'Then'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxGesture'
 
   target 'NearTruckTests' do
     inherit! :search_paths
