@@ -55,6 +55,7 @@ class FoodTruckView: UIView {
     private func setupCollectionView() {
         itemCollectionView.dataSource = self
         itemCollectionView.delegate = self
+        itemCollectionView.backgroundColor = .clear
         
         itemCollectionView.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: "ItemCollectionViewCell")
         
