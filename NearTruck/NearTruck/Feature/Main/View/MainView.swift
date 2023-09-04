@@ -51,7 +51,8 @@ class MainView: UIView {
         }
         
         foodTruckView.snp.makeConstraints {
-            $0.top.left.trailing.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top)
+            $0.left.trailing.equalToSuperview()
             $0.bottom.equalTo(tabBar.snp.top)
         }
         
