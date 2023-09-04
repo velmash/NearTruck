@@ -17,8 +17,8 @@ enum TappedView {
 class MainView: UIView {
     let tabBar = MainTabBar()
     
-    let tacoView = TacoView()
-    let tempView = UIView().then {
+    let foodTruckView = FoodTruckView()
+    let myPageView = UIView().then {
         $0.backgroundColor = .red
     }
     
@@ -37,8 +37,8 @@ class MainView: UIView {
         self.backgroundColor = .white
         
         addSubview(tabBar)
-        addSubview(tacoView)
-        addSubview(tempView)
+        addSubview(foodTruckView)
+        addSubview(myPageView)
         
         tabBar.snp.makeConstraints {
             let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
@@ -50,13 +50,13 @@ class MainView: UIView {
             $0.leading.trailing.bottom.equalToSuperview()
         }
         
-        tacoView.snp.makeConstraints {
+        foodTruckView.snp.makeConstraints {
             $0.top.left.trailing.equalToSuperview()
             $0.bottom.equalTo(tabBar.snp.top)
         }
         
-        tempView.snp.makeConstraints {
-            $0.edges.equalTo(tacoView)
+        myPageView.snp.makeConstraints {
+            $0.edges.equalTo(foodTruckView)
         }
     }
 }

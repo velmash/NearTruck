@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TacoView: UIView {
+class FoodTruckView: UIView {
     let titleLabel = UILabel().then {
         $0.text = "Welcome"
         $0.textColor = .black

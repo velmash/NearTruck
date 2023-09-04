@@ -16,8 +16,8 @@ class MainViewModel: ViewModelType {
     
     func transform(input: Input) -> Output {
         Driver.merge(
-            input.firstItemTrigger.map { _ in SelectedTap.taco },
-            input.secondItemTrigger.map { _ in SelectedTap.sundae }
+            input.foodTruckItemTrigger.map { _ in SelectedTap.taco },
+            input.myPageItemTrigger.map { _ in SelectedTap.sundae }
         )
         .drive(onNext: { [weak self] action in
             if self?.selectedTapRelay.value != action {
@@ -47,8 +47,8 @@ class MainViewModel: ViewModelType {
 
 extension MainViewModel {
     struct Input {
-        let firstItemTrigger: Driver<Void>
-        let secondItemTrigger: Driver<Void>
+        let foodTruckItemTrigger: Driver<Void>
+        let myPageItemTrigger: Driver<Void>
         let actionBtnTrigger: Driver<Void>
     }
     struct Output {

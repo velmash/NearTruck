@@ -28,9 +28,9 @@ class MainViewController: BaseViewController {
     private func bindViewModel() {
         guard let viewModel = self.viewModel else { return }
         let input = MainViewModel.Input(
-            firstItemTrigger: mainView.tabBar.firstTabItem.rx.tapGesture().when(.recognized).map { _ in () }.asDriverOnErrorJustComplete(),
-            secondItemTrigger: mainView.tabBar.secondTabItem.rx.tapGesture().when(.recognized).map { _ in () }.asDriverOnErrorJustComplete(),
-            actionBtnTrigger: mainView.tacoView.actionButton.rx.tap.asDriver()
+            foodTruckItemTrigger: mainView.tabBar.foodTruckTabItem.rx.tapGesture().when(.recognized).map { _ in () }.asDriverOnErrorJustComplete(),
+            myPageItemTrigger: mainView.tabBar.myPageTabItem.rx.tapGesture().when(.recognized).map { _ in () }.asDriverOnErrorJustComplete(),
+            actionBtnTrigger: mainView.foodTruckView.actionButton.rx.tap.asDriver()
         )
         
         let output = viewModel.transform(input: input)
@@ -38,8 +38,8 @@ class MainViewController: BaseViewController {
         output.selectedTapPost
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.mainView.tacoView.isHidden = !self.mainView.tabBar.firstTabItem.isSelected
-                self.mainView.tempView.isHidden = !self.mainView.tabBar.secondTabItem.isSelected
+                self.mainView.foodTruckView.isHidden = !self.mainView.tabBar.foodTruckTabItem.isSelected
+                self.mainView.myPageView.isHidden = !self.mainView.tabBar.myPageTabItem.isSelected
             })
             .disposed(by: bag)
     }

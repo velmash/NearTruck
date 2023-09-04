@@ -21,8 +21,8 @@ class MainTabBar: UIView {
         $0.distribution = .fillEqually
     }
     
-    let firstTabItem = TabItem()
-    let secondTabItem = TabItem()
+    let foodTruckTabItem = TabItem()
+    let myPageTabItem = TabItem()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,8 +40,8 @@ class MainTabBar: UIView {
         setItems()
         
         addSubview(itemStackView)
-        itemStackView.addArrangedSubview(firstTabItem)
-        itemStackView.addArrangedSubview(secondTabItem)
+        itemStackView.addArrangedSubview(foodTruckTabItem)
+        itemStackView.addArrangedSubview(myPageTabItem)
         
         itemStackView.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()
@@ -61,17 +61,17 @@ class MainTabBar: UIView {
     }
     
     private func setItems() {
-        firstTabItem.setItem(imgName: "loacon", title: "테스트1", isSelected: true)
-        secondTabItem.setItem(imgName: "mantis", title: "테스트2", isSelected: false)
+        foodTruckTabItem.setItem(imgName: "loacon", title: "푸드트럭", isSelected: true)
+        myPageTabItem.setItem(imgName: "mantis", title: "마이", isSelected: false)
     }
     
     private func bindRx() {
-        let tabItems = [firstTabItem, secondTabItem]
+        let tabItems = [foodTruckTabItem, myPageTabItem]
         
         tabItems.forEach { tabItem in
             tabItem.rx.tapGesture()
                 .when(.recognized)
-                .subscribe(onNext: { [weak self] _ in
+                .subscribe(onNext: { _ in
                     tabItems.forEach { $0.isSelected = ($0 == tabItem) }
                 })
                 .disposed(by: disposeBag)
