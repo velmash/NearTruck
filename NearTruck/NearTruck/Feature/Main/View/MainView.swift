@@ -27,7 +27,6 @@ class MainView: UIView {
         
         // UI 요소 초기화 및 배치
         setupUI()
-        setViews()
     }
     
     required init?(coder: NSCoder) {
@@ -36,7 +35,6 @@ class MainView: UIView {
     
     private func setupUI() {
         self.backgroundColor = .white
-        self.tabBar.delegate = self
         
         addSubview(tabBar)
         addSubview(tacoView)
@@ -60,16 +58,5 @@ class MainView: UIView {
         tempView.snp.makeConstraints {
             $0.edges.equalTo(tacoView)
         }
-    }
-    
-    private func setViews() {
-        tacoView.isHidden = !tabBar.firstTabItem.isSelected
-        tempView.isHidden = !tabBar.secondTabItem.isSelected
-    }
-}
-
-extension MainView: MainTabBarDelegate {
-    func clickTab() {
-        setViews()
     }
 }

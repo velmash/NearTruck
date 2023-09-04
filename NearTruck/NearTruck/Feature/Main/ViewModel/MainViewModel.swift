@@ -10,10 +10,23 @@ import RxCocoa
 
 class MainViewModel: ViewModelType {
     private var bag = DisposeBag()
+    private var selectedTapRelay = BehaviorRelay<SelectedTap>(value: .taco)
     
     var coordinator: MainCoordinator?
     
     func transform(input: Input) -> Output {
+        Driver.merge(
+            input.firstItemTrigger.map { _ in SelectedTap.taco },
+            input.secondItemTrigger.map { _ in SelectedTap.sundae }
+        )
+        .drive(onNext: { [weak self] action in
+            if self?.selectedTapRelay.value != action {
+//                print("HIHI", action)
+                self?.selectedTapRelay.accept(action)
+            }
+        })
+        .disposed(by: bag)
+        
         Driver.merge(
             input.actionBtnTrigger.map { _ in NaviAction.goDetail }
         )
@@ -26,18 +39,28 @@ class MainViewModel: ViewModelType {
         })
         .disposed(by: bag)
         
-        return Output()
+        let selectedTapPost = selectedTapRelay.asDriverOnErrorJustComplete()
+        
+        return Output(selectedTapPost: selectedTapPost)
     }
 }
 
 extension MainViewModel {
     struct Input {
+        let firstItemTrigger: Driver<Void>
+        let secondItemTrigger: Driver<Void>
         let actionBtnTrigger: Driver<Void>
     }
-    struct Output { }
+    struct Output {
+        let selectedTapPost: Driver<SelectedTap>
+    }
 }
 
 extension MainViewModel {
+    enum SelectedTap {
+        case taco
+        case sundae
+    }
     enum NaviAction {
         case goDetail
     }

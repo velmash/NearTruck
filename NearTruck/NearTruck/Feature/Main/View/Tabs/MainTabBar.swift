@@ -12,13 +12,8 @@ import RxSwift
 import RxCocoa
 import RxGesture
 
-protocol MainTabBarDelegate {
-    func clickTab()
-}
-
 class MainTabBar: UIView {
     private let disposeBag = DisposeBag()
-    var delegate: MainTabBarDelegate?
     
     let itemStackView = UIStackView().then {
         $0.axis = .horizontal
@@ -78,7 +73,6 @@ class MainTabBar: UIView {
                 .when(.recognized)
                 .subscribe(onNext: { [weak self] _ in
                     tabItems.forEach { $0.isSelected = ($0 == tabItem) }
-                    self?.delegate?.clickTab()
                 })
                 .disposed(by: disposeBag)
         }
