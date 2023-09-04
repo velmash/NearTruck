@@ -9,9 +9,9 @@ import UIKit
 import SnapKit
 import Then
 
-enum TappedView {
-    case taco
-    case sundae
+enum FoodType: String {
+    case taco = "타코야키"
+    case sundae = "순대"
 }
 
 class MainView: UIView {

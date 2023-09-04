@@ -11,7 +11,6 @@ import Then
 
 class DetailView: UIView {
     let titleLabel = UILabel().then {
-        $0.text = "Detail"
         $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 14)
     }

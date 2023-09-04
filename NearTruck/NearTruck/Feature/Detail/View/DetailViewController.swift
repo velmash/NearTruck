@@ -13,6 +13,7 @@ class DetailViewController: BaseViewController {
     private var bag = DisposeBag()
     private let detailView = DetailView()
     
+    var foodType: FoodType?
     var viewModel: DetailViewModel?
     
     override func loadView() {
@@ -23,6 +24,7 @@ class DetailViewController: BaseViewController {
         super.viewDidLoad()
         
         bindViewModel()
+        detailView.titleLabel.text = foodType?.rawValue
     }
     
     private func bindViewModel() {

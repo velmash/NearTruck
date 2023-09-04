@@ -24,8 +24,8 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func goDetail() {
-        let coordinator = DetailCoordinator(navigationController: navigationController)
+    func goDetail(type: FoodType) {
+        let coordinator = DetailCoordinator(navigationController: navigationController, type: type)
         
         coordinator.start()
     }

@@ -8,10 +8,12 @@
 import UIKit
 
 class DetailCoordinator: Coordinator {
+    var foodType: FoodType
     var navigationController: UINavigationController
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, type: FoodType) {
         self.navigationController = navigationController
+        self.foodType = type
     }
     
     func start() {
@@ -20,6 +22,7 @@ class DetailCoordinator: Coordinator {
         
         viewModel.coordinator = self
         vc.viewModel = viewModel
+        vc.foodType = foodType
         
         navigationController.pushViewController(vc, animated: true)
     }
