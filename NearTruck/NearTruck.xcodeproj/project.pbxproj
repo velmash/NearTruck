@@ -12,6 +12,7 @@
 		3A6883DA2AA5A4AE00023425 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D92AA5A4AE00023425 /* TabItem.swift */; };
 		3A6883DC2AA5ABE000023425 /* FoodTruckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */; };
 		3A6883DF2AA5AFB600023425 /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883DE2AA5AFB600023425 /* ObservableType+Extension.swift */; };
+		3A6883E32AA5BADB00023425 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883E22AA5BADB00023425 /* MyPageView.swift */; };
 		3AB283F72A9EF81600ACF944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283F62A9EF81600ACF944 /* AppDelegate.swift */; };
 		3AB283F92A9EF81600ACF944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283F82A9EF81600ACF944 /* SceneDelegate.swift */; };
 		3AB283FB2A9EF81600ACF944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283FA2A9EF81600ACF944 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		3A6883D92AA5A4AE00023425 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckView.swift; sourceTree = "<group>"; };
 		3A6883DE2AA5AFB600023425 /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
+		3A6883E22AA5BADB00023425 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		3AB283F32A9EF81600ACF944 /* NearTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB283F62A9EF81600ACF944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB283F82A9EF81600ACF944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,22 @@
 				3A6883DE2AA5AFB600023425 /* ObservableType+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3A6883E02AA5BAB000023425 /* FoodTruckViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */,
+			);
+			path = FoodTruckViews;
+			sourceTree = "<group>";
+		};
+		3A6883E12AA5BAC000023425 /* MyPageViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A6883E22AA5BADB00023425 /* MyPageView.swift */,
+			);
+			path = MyPageViews;
 			sourceTree = "<group>";
 		};
 		3AB283EA2A9EF81600ACF944 = {
@@ -252,8 +270,9 @@
 			children = (
 				3AB284312A9F184F00ACF944 /* MainViewController.swift */,
 				3AB284332A9F19DB00ACF944 /* MainView.swift */,
-				3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */,
 				3A6883D62AA59D4900023425 /* Tabs */,
+				3A6883E02AA5BAB000023425 /* FoodTruckViews */,
+				3A6883E12AA5BAC000023425 /* MyPageViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -581,6 +600,7 @@
 				3AB2842E2A9F178600ACF944 /* MainCoordinator.swift in Sources */,
 				3A6883DA2AA5A4AE00023425 /* TabItem.swift in Sources */,
 				3AB283F92A9EF81600ACF944 /* SceneDelegate.swift in Sources */,
+				3A6883E32AA5BADB00023425 /* MyPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

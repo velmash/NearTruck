@@ -18,9 +18,7 @@ class MainView: UIView {
     let tabBar = MainTabBar()
     
     let foodTruckView = FoodTruckView()
-    let myPageView = UIView().then {
-        $0.backgroundColor = .red
-    }
+    let myPageView = MyPageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
