@@ -9,19 +9,17 @@ import UIKit
 import SnapKit
 import Then
 
+enum TappedView {
+    case taco
+    case sundae
+}
+
 class MainView: UIView {
     let tabBar = MainTabBar()
     
-    let titleLabel = UILabel().then {
-        $0.text = "Welcome"
-        $0.textColor = .black
-        $0.font = UIFont.systemFont(ofSize: 14)
-    }
-    
-    let actionButton = UIButton().then {
-        $0.setTitle("Click Me", for: .normal)
-        $0.titleLabel?.font = UIFont.systemFont(ofSize: 14) // 타이틀 폰트 설정
-        $0.setTitleColor(.blue, for: .normal) // 타이틀 색상 설정
+    let tacoView = TacoView()
+    let tempView = UIView().then {
+        $0.backgroundColor = .red
     }
     
     override init(frame: CGRect) {
@@ -29,6 +27,7 @@ class MainView: UIView {
         
         // UI 요소 초기화 및 배치
         setupUI()
+        setViews()
     }
     
     required init?(coder: NSCoder) {
@@ -37,10 +36,11 @@ class MainView: UIView {
     
     private func setupUI() {
         self.backgroundColor = .white
+        self.tabBar.delegate = self
         
         addSubview(tabBar)
-        addSubview(actionButton)
-        addSubview(titleLabel)
+        addSubview(tacoView)
+        addSubview(tempView)
         
         tabBar.snp.makeConstraints {
             let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
@@ -52,14 +52,24 @@ class MainView: UIView {
             $0.leading.trailing.bottom.equalToSuperview()
         }
         
-        actionButton.snp.makeConstraints {
-            $0.center.equalToSuperview()
-            $0.size.equalTo(50)
+        tacoView.snp.makeConstraints {
+            $0.top.left.trailing.equalToSuperview()
+            $0.bottom.equalTo(tabBar.snp.top)
         }
         
-        titleLabel.snp.makeConstraints {
-            $0.bottom.equalTo(actionButton.snp.top).offset(-20)
-            $0.centerX.equalToSuperview()
+        tempView.snp.makeConstraints {
+            $0.edges.equalTo(tacoView)
         }
+    }
+    
+    private func setViews() {
+        tacoView.isHidden = !tabBar.firstTabItem.isSelected
+        tempView.isHidden = !tabBar.secondTabItem.isSelected
+    }
+}
+
+extension MainView: MainTabBarDelegate {
+    func clickTab() {
+        setViews()
     }
 }

@@ -28,7 +28,7 @@ class MainViewController: BaseViewController {
     private func bindViewModel() {
         guard let viewModel = self.viewModel else { return }
         let input = MainViewModel.Input(
-            actionBtnTrigger: mainView.actionButton.rx.tap.asDriver()
+            actionBtnTrigger: mainView.tacoView.actionButton.rx.tap.asDriver()
         )
         
         let output = viewModel.transform(input: input)

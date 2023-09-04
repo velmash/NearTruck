@@ -10,6 +10,7 @@
 		368D54DC83EFB050B8D25B0F /* Pods_NearTruck_NearTruckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB64511CA7B922A512C2E63 /* Pods_NearTruck_NearTruckUITests.framework */; };
 		3A6883D82AA59D5E00023425 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D72AA59D5E00023425 /* MainTabBar.swift */; };
 		3A6883DA2AA5A4AE00023425 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D92AA5A4AE00023425 /* TabItem.swift */; };
+		3A6883DC2AA5ABE000023425 /* TacoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883DB2AA5ABE000023425 /* TacoView.swift */; };
 		3AB283F72A9EF81600ACF944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283F62A9EF81600ACF944 /* AppDelegate.swift */; };
 		3AB283F92A9EF81600ACF944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283F82A9EF81600ACF944 /* SceneDelegate.swift */; };
 		3AB283FB2A9EF81600ACF944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB283FA2A9EF81600ACF944 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		24CE404DF23DF3E018B01169 /* Pods-NearTruck-NearTruckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck-NearTruckUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A6883D72AA59D5E00023425 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		3A6883D92AA5A4AE00023425 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		3A6883DB2AA5ABE000023425 /* TacoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoView.swift; sourceTree = "<group>"; };
 		3AB283F32A9EF81600ACF944 /* NearTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB283F62A9EF81600ACF944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB283F82A9EF81600ACF944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			children = (
 				3AB284312A9F184F00ACF944 /* MainViewController.swift */,
 				3AB284332A9F19DB00ACF944 /* MainView.swift */,
+				3A6883DB2AA5ABE000023425 /* TacoView.swift */,
 				3A6883D62AA59D4900023425 /* Tabs */,
 			);
 			path = View;
@@ -560,6 +563,7 @@
 				3AB283FB2A9EF81600ACF944 /* ViewController.swift in Sources */,
 				3AB283F72A9EF81600ACF944 /* AppDelegate.swift in Sources */,
 				3AB284472A9F298C00ACF944 /* DetailViewModel.swift in Sources */,
+				3A6883DC2AA5ABE000023425 /* TacoView.swift in Sources */,
 				3AB284432A9F25C900ACF944 /* ViewModelType.swift in Sources */,
 				3AB284322A9F184F00ACF944 /* MainViewController.swift in Sources */,
 				3AB2842E2A9F178600ACF944 /* MainCoordinator.swift in Sources */,
