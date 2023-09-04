@@ -10,6 +10,8 @@ import SnapKit
 import Then
 
 class MainView: UIView {
+    let tabBar = MainTabBar()
+    
     let titleLabel = UILabel().then {
         $0.text = "Welcome"
         $0.textColor = .black
@@ -36,8 +38,19 @@ class MainView: UIView {
     private func setupUI() {
         self.backgroundColor = .white
         
+        addSubview(tabBar)
         addSubview(actionButton)
         addSubview(titleLabel)
+        
+        tabBar.snp.makeConstraints {
+            let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            let safeAreaBottom = scene?.windows.first?.safeAreaInsets.bottom ?? 0
+            
+            let tabBarHeight = 50 + safeAreaBottom
+            
+            $0.height.equalTo(tabBarHeight)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
         
         actionButton.snp.makeConstraints {
             $0.center.equalToSuperview()
