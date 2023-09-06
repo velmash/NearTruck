@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		368D54DC83EFB050B8D25B0F /* Pods_NearTruck_NearTruckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB64511CA7B922A512C2E63 /* Pods_NearTruck_NearTruckUITests.framework */; };
+		3A267DA32AA845EF0020E571 /* TruckMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA22AA845EF0020E571 /* TruckMapViewController.swift */; };
+		3A267DA52AA846670020E571 /* BridgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA42AA846670020E571 /* BridgeVC.swift */; };
+		3A267DA72AA846FD0020E571 /* TruckMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */; };
+		3A267DA92AA847DD0020E571 /* TruckMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA82AA847DD0020E571 /* TruckMapViewModel.swift */; };
 		3A6883D82AA59D5E00023425 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D72AA59D5E00023425 /* MainTabBar.swift */; };
 		3A6883DA2AA5A4AE00023425 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D92AA5A4AE00023425 /* TabItem.swift */; };
 		3A6883DC2AA5ABE000023425 /* FoodTruckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */; };
@@ -58,6 +62,10 @@
 /* Begin PBXFileReference section */
 		23324602F9E32CBABDE6F6B0 /* Pods-NearTruck-NearTruckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck-NearTruckUITests.release.xcconfig"; path = "Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests.release.xcconfig"; sourceTree = "<group>"; };
 		24CE404DF23DF3E018B01169 /* Pods-NearTruck-NearTruckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearTruck-NearTruckUITests.debug.xcconfig"; path = "Target Support Files/Pods-NearTruck-NearTruckUITests/Pods-NearTruck-NearTruckUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A267DA22AA845EF0020E571 /* TruckMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckMapViewController.swift; sourceTree = "<group>"; };
+		3A267DA42AA846670020E571 /* BridgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeVC.swift; sourceTree = "<group>"; };
+		3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckMapCoordinator.swift; sourceTree = "<group>"; };
+		3A267DA82AA847DD0020E571 /* TruckMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckMapViewModel.swift; sourceTree = "<group>"; };
 		3A6883D72AA59D5E00023425 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		3A6883D92AA5A4AE00023425 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckView.swift; sourceTree = "<group>"; };
@@ -125,6 +133,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A267DA12AA845DA0020E571 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3A267DA22AA845EF0020E571 /* TruckMapViewController.swift */,
+				3A267DA42AA846670020E571 /* BridgeVC.swift */,
+				3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */,
+				3A267DA82AA847DD0020E571 /* TruckMapViewModel.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		3A6883D62AA59D4900023425 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +255,7 @@
 		3AB2842A2A9F175000ACF944 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				3A267DA12AA845DA0020E571 /* Test */,
 				3AB2842B2A9F175F00ACF944 /* Main */,
 				3AB284352A9F1CFB00ACF944 /* Detail */,
 			);
@@ -587,19 +607,23 @@
 			files = (
 				3AB2843C2A9F1D6F00ACF944 /* DetailViewController.swift in Sources */,
 				3AB284292A9F173A00ACF944 /* Coordinator.swift in Sources */,
+				3A267DA52AA846670020E571 /* BridgeVC.swift in Sources */,
 				3AB284412A9F1EDB00ACF944 /* BaseViewController.swift in Sources */,
 				3A6883D82AA59D5E00023425 /* MainTabBar.swift in Sources */,
 				3A6883DF2AA5AFB600023425 /* ObservableType+Extension.swift in Sources */,
+				3A267DA72AA846FD0020E571 /* TruckMapCoordinator.swift in Sources */,
 				3A6883E52AA5BE6800023425 /* ItemCollectionViewCell.swift in Sources */,
 				3AB2843A2A9F1D3300ACF944 /* DetailCoordinator.swift in Sources */,
 				3AB2843E2A9F1D8400ACF944 /* DetailView.swift in Sources */,
 				3AB284452A9F25D400ACF944 /* MainViewModel.swift in Sources */,
+				3A267DA32AA845EF0020E571 /* TruckMapViewController.swift in Sources */,
 				3AB284342A9F19DB00ACF944 /* MainView.swift in Sources */,
 				3AB283FB2A9EF81600ACF944 /* ViewController.swift in Sources */,
 				3AB283F72A9EF81600ACF944 /* AppDelegate.swift in Sources */,
 				3AB284472A9F298C00ACF944 /* DetailViewModel.swift in Sources */,
 				3A6883DC2AA5ABE000023425 /* FoodTruckView.swift in Sources */,
 				3AB284432A9F25C900ACF944 /* ViewModelType.swift in Sources */,
+				3A267DA92AA847DD0020E571 /* TruckMapViewModel.swift in Sources */,
 				3AB284322A9F184F00ACF944 /* MainViewController.swift in Sources */,
 				3AB2842E2A9F178600ACF944 /* MainCoordinator.swift in Sources */,
 				3A6883DA2AA5A4AE00023425 /* TabItem.swift in Sources */,

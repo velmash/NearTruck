@@ -29,4 +29,9 @@ class MainCoordinator: Coordinator {
         
         coordinator.start()
     }
+    
+    func goTest() {
+        let coordinator = TruckMapCoordinator(navigationController: navigationController)
+        coordinator.start()
+    }
 }

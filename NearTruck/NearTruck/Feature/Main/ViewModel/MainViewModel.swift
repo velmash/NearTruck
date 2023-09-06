@@ -46,8 +46,8 @@ class MainViewModel: ViewModelType {
                 self?.coordinator?.goDetail(type: .taco)
             case .goSundae:
                 self?.coordinator?.goDetail(type: .sundae)
-            default:
-                print("ZSDF")
+            case .fail:
+                self?.coordinator?.goTest()
             }
         })
         .disposed(by: bag)
