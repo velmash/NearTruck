@@ -12,6 +12,7 @@ target 'NearTruck' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxGesture'
+  pod 'inavi-maps-sdk'
 
   target 'NearTruckTests' do
     inherit! :search_paths

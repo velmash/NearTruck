@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import iNaviMaps
 
 struct TruckMapViewController: View {
     @ObservedObject var viewModel: TruckMapViewModel
@@ -16,6 +17,8 @@ struct TruckMapViewController: View {
             Button("Back") {
                 viewModel.goBack()
             }
+            MapViewRepresentable(viewModel: viewModel)
+                            .frame(width: 300, height: 300)
         }
     }
 }

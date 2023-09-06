@@ -12,6 +12,7 @@
 		3A267DA52AA846670020E571 /* BridgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA42AA846670020E571 /* BridgeVC.swift */; };
 		3A267DA72AA846FD0020E571 /* TruckMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */; };
 		3A267DA92AA847DD0020E571 /* TruckMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DA82AA847DD0020E571 /* TruckMapViewModel.swift */; };
+		3A267DAE2AA84F410020E571 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A267DAD2AA84F410020E571 /* MapView.swift */; };
 		3A6883D82AA59D5E00023425 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D72AA59D5E00023425 /* MainTabBar.swift */; };
 		3A6883DA2AA5A4AE00023425 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883D92AA5A4AE00023425 /* TabItem.swift */; };
 		3A6883DC2AA5ABE000023425 /* FoodTruckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */; };
@@ -66,6 +67,7 @@
 		3A267DA42AA846670020E571 /* BridgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeVC.swift; sourceTree = "<group>"; };
 		3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckMapCoordinator.swift; sourceTree = "<group>"; };
 		3A267DA82AA847DD0020E571 /* TruckMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckMapViewModel.swift; sourceTree = "<group>"; };
+		3A267DAD2AA84F410020E571 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3A6883D72AA59D5E00023425 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		3A6883D92AA5A4AE00023425 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		3A6883DB2AA5ABE000023425 /* FoodTruckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckView.swift; sourceTree = "<group>"; };
@@ -147,7 +149,7 @@
 		3A267DAA2AA84D380020E571 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				3A267DA22AA845EF0020E571 /* TruckMapViewController.swift */,
+				3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -163,7 +165,8 @@
 		3A267DAC2AA84D450020E571 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */,
+				3A267DA22AA845EF0020E571 /* TruckMapViewController.swift */,
+				3A267DAD2AA84F410020E571 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				3AB2843E2A9F1D8400ACF944 /* DetailView.swift in Sources */,
 				3AB284452A9F25D400ACF944 /* MainViewModel.swift in Sources */,
 				3A267DA32AA845EF0020E571 /* TruckMapViewController.swift in Sources */,
+				3A267DAE2AA84F410020E571 /* MapView.swift in Sources */,
 				3AB284342A9F19DB00ACF944 /* MainView.swift in Sources */,
 				3AB283FB2A9EF81600ACF944 /* ViewController.swift in Sources */,
 				3AB283F72A9EF81600ACF944 /* AppDelegate.swift in Sources */,
