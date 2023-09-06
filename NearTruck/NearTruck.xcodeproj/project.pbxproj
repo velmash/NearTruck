@@ -133,15 +133,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A267DA12AA845DA0020E571 /* Test */ = {
+		3A267DA12AA845DA0020E571 /* TruckMap */ = {
+			isa = PBXGroup;
+			children = (
+				3A267DA42AA846670020E571 /* BridgeVC.swift */,
+				3A267DAA2AA84D380020E571 /* Coordinator */,
+				3A267DAB2AA84D3E0020E571 /* ViewModel */,
+				3A267DAC2AA84D450020E571 /* View */,
+			);
+			path = TruckMap;
+			sourceTree = "<group>";
+		};
+		3A267DAA2AA84D380020E571 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				3A267DA22AA845EF0020E571 /* TruckMapViewController.swift */,
-				3A267DA42AA846670020E571 /* BridgeVC.swift */,
-				3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3A267DAB2AA84D3E0020E571 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 				3A267DA82AA847DD0020E571 /* TruckMapViewModel.swift */,
 			);
-			path = Test;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A267DAC2AA84D450020E571 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A267DA62AA846FD0020E571 /* TruckMapCoordinator.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3A6883D62AA59D4900023425 /* Tabs */ = {
@@ -255,7 +279,7 @@
 		3AB2842A2A9F175000ACF944 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				3A267DA12AA845DA0020E571 /* Test */,
+				3A267DA12AA845DA0020E571 /* TruckMap */,
 				3AB2842B2A9F175F00ACF944 /* Main */,
 				3AB284352A9F1CFB00ACF944 /* Detail */,
 			);
