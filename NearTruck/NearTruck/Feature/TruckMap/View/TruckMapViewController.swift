@@ -13,13 +13,34 @@ struct TruckMapViewController: View {
     
     var body: some View {
         VStack {
-            Text(viewModel.titleText)
-            Button("Back") {
-                viewModel.goBack()
+            topBar
+            Spacer()
+            VStack {
+                Text(viewModel.titleText)
+                MapViewRepresentable(viewModel: viewModel)
+                                .frame(width: 300, height: 300)
             }
-            MapViewRepresentable(viewModel: viewModel)
-                            .frame(width: 300, height: 300)
+            Spacer()
         }
+    }
+    
+    var topBar: some View {
+        HStack {
+            Button(action: {
+                viewModel.goBack()
+            }) {
+                Image("icon_back")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 30, height: 30)
+            }
+            Spacer()
+            Text("타이틀")
+            Spacer()
+            Color.clear
+                .frame(width: 30, height: 30)
+        }
+        .padding()
     }
 }
 
