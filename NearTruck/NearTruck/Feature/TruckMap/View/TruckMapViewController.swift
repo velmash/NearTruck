@@ -22,6 +22,9 @@ struct TruckMapViewController: View {
             }
             Spacer()
         }
+        .onReceive(viewModel.$toastMessage) { msg in
+            iToast.show(msg)
+        }
     }
     
     var topBar: some View {
